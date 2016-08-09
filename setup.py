@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='b3notify',
-    version='0.1.0',
+    version='0.1.1',
     py_modules=['b3notify'],
     include_package_data=True,
     install_requires=[

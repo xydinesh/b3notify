@@ -27,9 +27,8 @@ class B3Notify(object):
         config.read([
             os.path.expanduser('~/.b3notifyrc'),
             '.b3notifyrc',
-            os.path.expanduser('{0}/nibiru.ini'.format(self.home)),
+            os.path.expanduser('{0}'.format(self.home)),
         ])
-        # print os.path.expanduser('~/.bluejay/nibiru.ini')
         self.url = config.get(profile, 'url').strip("'")
         self.username = config.get(profile, 'username').strip("'")
         self.password = config.get(profile, 'password').strip("'")
@@ -56,7 +55,6 @@ class B3Notify(object):
         }
 
         self.commit_url = '{0}{1}'.format(self.url, commit)
-        print self.commit_url
         response = requests.post(
             self.commit_url,
             headers=self.headers,
