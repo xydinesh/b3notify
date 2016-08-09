@@ -3,6 +3,12 @@ Bitbucket Build Status Notifier (b3notify), is a command line client that can be
 
 b3notify follows REST API for [updating bitbucket build status](https://developer.atlassian.com/bitbucket/server/docs/latest/how-tos/updating-build-status-for-commits.html)
 
+## Installation
+
+  ```
+  pip install b3notify
+  ```
+
 ## Configuration
 
   Save following content in ~/.b3notifyrc or .b3notifyrc
